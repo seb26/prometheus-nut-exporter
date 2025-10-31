@@ -1,7 +1,7 @@
 VERSION ?= v1.2.1-seb26-0.2.0
 PLATFORM ?= linux/amd64
-IMAGE_NAME ?= hon95/prometheus-nut-exporter:$(VERSION)
 REGISTRY ?= 
+IMAGE_NAME ?= hon95/prometheus-nut-exporter:$(VERSION)
 
 build:
 	docker buildx build \
@@ -25,4 +25,4 @@ check:
 	manage/integration_test.sh
 
 push:
-	skopeo copy docker-daemon:$(IMAGE_NAME) docker://$(REGISTRY)/$(IMAGE_NAME)
+	docker push $(REGISTRY)/$(IMAGE_NAME)
