@@ -1,7 +1,7 @@
 VERSION ?= v1.2.1-seb26-0.2.0
 PLATFORM ?= linux/amd64
 REGISTRY ?= 
-IMAGE_NAME ?= hon95/prometheus-nut-exporter:$(VERSION)
+IMAGE_NAME ?= $(if $(REGISTRY),$(REGISTRY)/,)hon95/prometheus-nut-exporter:$(VERSION)
 
 build:
 	docker buildx build \
@@ -25,4 +25,4 @@ check:
 	manage/integration_test.sh
 
 push:
-	docker push $(REGISTRY)/$(IMAGE_NAME)
+	docker push $(IMAGE_NAME)
