@@ -1,4 +1,4 @@
-VERSION ?= v1.2.1-seb26-0.1.0
+VERSION ?= v1.2.1-seb26-0.2.0
 PLATFORM ?= linux/amd64
 IMAGE_NAME ?= hon95/prometheus-nut-exporter:$(VERSION)
 REGISTRY ?= 
