@@ -24,7 +24,7 @@ Example `docker-compose.yml`:
 ```yaml
 services:
   nut-exporter:
-    image: seb26/prometheus-nut-exporter:v1.2.2
+    image: ghcr.io/seb26/prometheus-nut-exporter:v1.2.2
     environment:
       - TZ=Europe/Oslo
       - HTTP_PATH=/metrics
