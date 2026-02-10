@@ -126,7 +126,6 @@ async fn query_nut_vars(stream: &mut BufReader<TcpStream>, upses: &mut UpsVarMap
     Ok(())
 }
 
-
 async fn override_nut_values(vars: &mut HashMap<String, String>) {
     let config = config::read_config();
 
