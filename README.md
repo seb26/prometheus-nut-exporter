@@ -89,7 +89,9 @@ resources:
 
 ### Docker Image Versions
 
-Use the exact version number for releases (i.e. v1.2.2) and `latest` for bleeding/dev/unstable releases.
+Images are published to GitHub Container Registry, at `ghcr.io/seb26/prometheus-nut-exporter.
+
+Use the exact version number for releases (i.e. `v1.2.2`) and `latest` for bleeding/dev/unstable releases.
 
 ### Environment Variables
 

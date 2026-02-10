@@ -18,6 +18,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
+## [1.2.2] - 2026-02-10
+
+This release is the first of the seb26 fork.
+
+### Added
+
+* Added config option to calculate nut_power_watts from other NUT values if NUT ups.power is not available, by setting  `UPS_POWER_FROM_LOAD_PERCENTAGE=true`.
+
+### Changed
+
+* Updated rust to v1.88.
+* Updated container image base to Alpine v3.22.
+* Updated dependencies.
+* Updated CI to push to GitHub Container Registry.
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
 ## [1.2.1] - 2022-08-03
 
 ### Added
