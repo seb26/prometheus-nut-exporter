@@ -22,12 +22,9 @@ If you want to test that it's working, run `telnet <nut-server> 3493` and then `
 Example `docker-compose.yml`:
 
 ```yaml
-version: "3.7"
-
 services:
   nut-exporter:
-    # Stable v1
-    image: hon95/prometheus-nut-exporter:1
+    image: seb26/prometheus-nut-exporter:v1.2.2
     environment:
       - TZ=Europe/Oslo
       - HTTP_PATH=/metrics
@@ -92,7 +89,7 @@ resources:
 
 ### Docker Image Versions
 
-Use e.g. `1` for stable v1.y.z releases and `latest` for bleeding/dev/unstable releases.
+Use the exact version number for releases (i.e. v1.2.2) and `latest` for bleeding/dev/unstable releases.
 
 ### Environment Variables
 
@@ -109,4 +106,16 @@ See [metrics](metrics.md).
 
 ## License
 
-GNU General Public License version 3 (GPLv3).
+GNU General Public License version 3 (GPLv3), authored by HON95, originally available at https://github.com/HON95/prometheus-nut-exporter.
+
+This is a fork by seb26, made because the developer isn't active anymore.
+
+It is forked from v1.2.1 and the license is the same.
+
+The first release number from this fork is **v1.2.2**, and includes work by sirux88 and seb26. Please see the repository history for more detailed ownership information.
+
+I like the program and honour the original author's work (HON95), but I just need it to be up to date and have patches.
+
+Isn't that what open source is all about?
+
+As with most open source software from GitHub, please use at your own risk.
